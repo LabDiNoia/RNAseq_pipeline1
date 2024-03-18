@@ -3,7 +3,7 @@
 Pipeline for taking raw FASTQ files, aligning them to a genome of choice, doing differential expression and splicing analysis.
 
 These bash shell scripts were written to work on *Compute Canada* HPC servers with the **SLURM** scheduler.  
-They were also designed to keep the scripts in the `HOME`/`PROJECT` space and the large input and output files in the `SCRATCH` space for not running into storage limitations and for faster read/write operations.  
+They were also designed to keep the scripts in the `HOME`/`PROJECT` space for persistent storage, and the large input and output files in the `SCRATCH` space for not running into storage limitations and for faster read/write operations.  
 This is done by mirroring the directory structure in both the `HOME` and `SCRATCH` spaces, with only symlinks pointing to the large files being stored in the `HOME` space. 
 
 This pipeline will take single-end or paired-end FASTQ files and in order, do:
